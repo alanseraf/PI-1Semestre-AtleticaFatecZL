@@ -156,17 +156,24 @@ p {
 
 }
 
+#main-modalidades .titulo {
+    top: 695px;
+}
+
 
 /*media query do titulo*/
 @media screen and (max-width: 1366px) {
     .titulo {
-        top: 80%;
+        top: 74%;
     }
     #main-quemsomos .titulo {
         top: 68%;
     }
     #main-campeonatos .titulo {
         top:82%;
+    }
+    #main-modalidades .titulo {
+        top: 525px;
     }
 }
 
@@ -866,12 +873,91 @@ input[type=reset]{
 }
 
 
+/*estilo da loja virtual*/
+
+#banner-lojavirtual{
+    width: 100%;
+    height: auto;
+}
+
+#main-lojavirtual .titulo {
+    top: 46.5%;
+}
+
+#caixa-mural-produtos{
+    width: 100%;
+    height: auto;
+
+}
+
+ .quadro-mural-produtos{
+    width: 94%;
+    height: auto;
+    display: inline-block;
+}
+
+#mural-produtos{
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    list-style: none;
+    padding-top: 2%;
+}
+
+.box-imagem-produtos{
+    width: 40%;
+    height: 215px; 
+    padding-top: 6%;
+}
+
+#main-lojavirtual p {
+    padding: 4% 0;
+}
+
+#mural-produtos h2 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#main-lojavirtual .breadcrumb {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1366px){
+    #main-lojavirtual .titulo {
+        top: 53.7%;
+    }
+    .box-imagem-produtos{
+        width: 40%;
+        height: 180px; 
+        padding-top: 6%;
+    }
+}
+
+@media screen and (max-width: 630px){
+
+    #banner-lojavirtual{
+        height: 108px;
+    }
+    #mural-produtos{
+       width: 100%;
+    }
+    #main-lojavirtual p {
+        padding: 2% 8.5%;    
+    }
+}
+
 
 
 
 
 /*
+CORES
 amarelo: rgba(232, 182, 2, 0.836);
 vermelho: rgba(99, 1, 1, 1)
+@media screen and (max-width: 1366px){}
+
+@media screen and (max-width: 630px){}
 
 */
