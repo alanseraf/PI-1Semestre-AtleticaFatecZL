@@ -3,7 +3,6 @@
 body {
     font-size: 18px;
     color: white;
-    background-color: black;
 }
 
 
@@ -70,27 +69,22 @@ nav {
 #menu-topo a {
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: yellow;
+}
+#menu-topo a:hover {
+    color: white;
 }
 
 
 /*Conteúdo principal - INDEX*/
 main {
-    background-color: white;
+    background-color: black;
     text-align: center;
-    padding: 2%;
 }
-
-#banner {
-    width: 40%;
-    height: auto;
-}
-
-/*Mural - INDEX*/
 
 h1 {
-    text-align: left;
+    text-align: center;
     margin-bottom: 2%;
 }
 
@@ -102,8 +96,116 @@ p {
     text-align: left;
     font-size: 1.2em;
     line-height: 1.6em;
+    padding-left: 1%;
 }
 
+#banner {
+    width: 100%;
+    height: auto;
+}
+
+#banner-quemsomos{
+    width:100%;
+    height: auto;
+}
+
+#banner-modalidades {
+    width: 100%;
+    min-height: auto;
+    z-index: -1;
+}
+
+#banner-campeonatos {
+    width: 100%;
+    height: auto;
+}
+
+#main-modalidades {
+    margin: 0;
+    padding: 0;
+}
+
+#main-quemsomos {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#main-campeonatos {
+    margin: 0;
+    padding: 0;
+}
+.campeonatos {
+    list-style: none;    
+    text-align: left;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+
+.campeonatos li a {
+    color: yellow;
+    text-decoration: none;
+}
+.campeonatos li a:hover {
+    color: white;
+    text-decoration:underline;
+}
+.titulo {
+    color: rgba(99, 1, 1, 1);
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 73%;
+    background-color: rgba(229, 229, 229, 0.432);
+    width: 100%;
+    line-height: 1.5em;
+}
+
+#main-quemsomos .titulo {
+    left: 0;
+    top: 60%;
+}
+
+#main-campeonatos .titulo {
+    top: 74%;
+
+}
+
+#main-modalidades .titulo {
+    top: 695px;
+}
+
+
+/*media query do titulo*/
+@media screen and (max-width: 1366px) {
+    .titulo {
+        top: 74%;
+    }
+    #main-quemsomos .titulo {
+        top: 68%;
+    }
+    #main-campeonatos .titulo {
+        top:82%;
+    }
+    #main-modalidades .titulo {
+        top: 525px;
+    }
+}
+
+#subtitulo {
+    text-align: left;
+    padding-left: 1%;
+}
+
+
+
+/*Mural - INDEX*/
+
+#caixa-mural h2 {
+    text-align: center;
+}
 
 #caixa-mural {
   margin-top: 2%;
@@ -133,98 +235,27 @@ p {
 
 .box-imagem {
     width: 100%; 
-    height: 240px;
-}
-/* Estilo para formulário de contato */
-#conteudo{
-    width: 92%;
-    min-height: 600px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9em;
-    text-align: justify;
-    background-color: black;
-}
-section{
-    padding: 0;
-}
-input{
-    width: 40%;
-    height: 25px;
-    background-color: #f5f0f0;
-    color: #000;
-    border: 2px solid white;
-    border-radius: 15px;
-    padding: 5px;
-    margin-left: 5px;
-
+    height: 250px;
+    border-radius: 22px;
+    border: solid 1px rgba(99, 1, 1, 1);
 }
 
-#assunto{
-    width: 41%;
-    height: 38px;
-    background-color: #f5f0f0;
-    color: #000;
-    border: 2px solid white;
-    border-radius: 15px;
-    padding: 5px;
-    margin-left: 5px;
 
-}
-#data{
-    width: auto;
-    height: 24px;
-    background-color: #f5f0f0;
-    color: #000;
-    border: 2px solid white;
-    border-radius: 15px;
-    padding: 5px;
-    margin-left: 5px;
-
+/* MAPA - INDEX*/
+#mapa {
+    width: 100%;
+    padding: 2em 0;
 }
 
-label, legend{
-    font-weight: bold;
-    font-size: 1em;
-    margin-left: 5px;
-
+.mapa-iframe {
+    width: 100%;
+    padding: 1em 0;
 }
 
-fieldset{
-    border-color: white;
-    border-radius: 15px;
-    padding: 5px;
-}
-textarea{
-    width: 40%;
-    background-color: #f5f0f0;
-    color: #000;
-    border: 2px solid white;
-    border-radius: 15px;
-    padding: 5px;
-    margin-left: 5px;
+#mapa h3, p {
+    text-align: center;
 }
 
-input[type=submit]{
-    width: 15%;
-    height: 40px;
-    background-color: yellow;
-    color: black;
-    cursor: pointer;
-    
-}
-input[type=reset]{
-    width: 15%;
-    height: 40px;
-    background-color: yellow;
-    color: black;
-    cursor: pointer;
-    
-}
-
-.required:after{
-    content: " *";
-    color: yellow;
-}
 /*Rodapé*/
 footer {
     text-align: center;
@@ -232,6 +263,7 @@ footer {
     padding-top: 2%;
     background-color: black;
     color: white;
+    border-top: 1px dashed white;
 }
 
 footer p {
@@ -241,7 +273,6 @@ footer p {
 #ico {
     padding-right: 12%;
     float: right;
-   
 }
 
 #ico-facebook, #ico-instagram, #ico-email {
@@ -317,64 +348,15 @@ footer p {
 
 .breadcrumb li a:hover{
     text-decoration: underline;
-}
-
-
-#banner-modalidades {
-    width: 100%;
-    min-height: auto;
-    z-index: -1;
-}
-#banner-campeonatos {
-    width: 100%;
-    height: auto;
-}
-#main-modalidades {
-    margin: 0;
-    padding: 0;
+    color: yellow;
 }
 
 /*Mural - MODALIDADES*/
-
-.titulo {
-    color: rgba(99, 1, 1, 1);
-    text-align: center;
-    font-size: 3em;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-    top: 73%;
-    background-color: rgba(229, 229, 229, 0.432);
-    width: 100%;
-    line-height: 1.5em;
-}
-
-/*media query do titulo*/
-@media screen and (max-width: 1366px) {
-    .titulo {
-        top: 82%;
-    }
-}
 
 #main-modalidades p {
     text-align: center;
     padding-bottom: 1%;
 }
-
-
-
-#subtitulo {
-    text-align: left;
-    padding-left: 1%;
-}
-
-p {
-    text-align: left;
-    font-size: 1.2em;
-    line-height: 1.6em;
-    padding-left: 1%;
-}
-
 
 #caixa-mural-modalidades {
   margin-top: 2%;
@@ -670,9 +652,333 @@ label [for="bt_menu"]{
 
 }   
 
+/*CAMPEONATOS*/
+
+#main-campeonatos p {
+    text-align: center;
+}
+
+#main-campeonatos .breadcrumb {
+    text-align: center;
+}
+
+/*QUEM SOMOS*/
+#historia{
+    width: 65%;
+    padding-left: 15%;
+    padding-top: 2%;
+    font-size: 0.95em;
+}
+
+#historia p {
+    text-align: justify;
+}
+
+#historia h1 {
+    text-align: center;
+}
+
+#main-quemsomos .breadcrumb {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#historia-logos {
+    padding-top: 2%;
+    padding-bottom: 4%;
+    width: 100%;
+}
+
+#historia-logos h1 {
+    text-align: center;
+}
+
+.logo-evolucao{
+    width: 14%;
+    height: auto;
+}
+
+#gestao {
+    width: 65%;
+    margin: 2% 2% 2% 16%;
+    padding: 1% 0 4% 0;
+    background-color: rgba(99, 1, 1, 1);
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 10px rgb(182, 159, 159);
+}
+
+#gestao h1 {
+    text-align: center;
+    color: rgb(232, 182, 2);
+}
+
+#gestao h2, h3, h4 {
+    text-align: left;
+    font-size: 1.1em;
+    padding-left: 2%;
+}
+
+.membro {
+    padding-bottom: 0;
+}
+
+#diretoria {
+    width: 60%;
+    height: auto;
+    float: left;
+    margin: 2% 2% 2% 2%;
+    border-radius: 2%;
+    box-shadow: 0px 0px 0px 10px rgb(182, 159, 159);
+}
+
+#gestao .membro h2 {
+    color: whitesmoke;
+    padding-top: 1.6%;
+}
+
+.membro h4 {
+    color: rgb(182, 159, 159);
+}
+
+.membro h3 {
+    text-transform: uppercase;
+    color: rgb(232, 182, 2);
+}
+
+
+/*media query da gestao */
+@media screen and (max-width: 1366px) {
+    #gestao {
+        width: 85%;
+        margin: 0 7% 6% 7%;
+    }
+   
+    #gestao .membro h2 {
+       padding-top: 1%;
+    }
+ 
+}
+
+/* Media query quem somos mobile*/
+@media screen and (max-width: 630px){
+    #banner-quemsomos{
+        width:100%;
+        height: 160px;
+    }
+    #historia{
+       width: 94%;
+       padding: 3%;
+       margin: 0;
+    }
+    #historia h1 {
+       padding-top: 2%;
+    }
+    #main-quemsomos .breadcrumb {
+        padding-top: 2%;
+        font-size: 0.9em;
+    }
+    #historia-logos {
+        padding: 3% 0 18% 0;
+    }
+    #historia-logos h1 {
+        padding-bottom: 4%;
+    }
+    .logo-evolucao{
+        width: 30%;
+    }
+    #gestao {
+        padding-top: 4%;
+    }
+    #gestao h2, h3, h4 {
+       text-align: center;
+    }
+    #diretoria {
+        float: none;
+        width: 90%;
+    }
+
+}
+
+/* Estilo para formulário de contato */
+#conteudo{
+    width: 100%;
+    min-height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    text-align: justify;
+    background-color: black;
+}
+section{
+    width: 93%;
+    padding: 2%;
+    background-color: black;
+}
+input{
+    width: 40%;
+    height: 25px;
+    background-color: #f5f0f0;
+    color: #000;
+    border: 2px solid rgb(114, 114, 93);
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 5px;
+
+}
+
+#assunto{
+    width: 41%;
+    height: 38px;
+    background-color: #f5f0f0;
+    color: #000;
+    border: 2px solid rgb(114, 114, 93);
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 5px;
+
+}
+#data{
+    width: auto;
+    height: 24px;
+    background-color: #f5f0f0;
+    color: #000;
+    border: 2px solid rgb(114, 114, 93);
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 5px;
+
+}
+
+label, legend{
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 5px;
+
+}
+
+fieldset{
+    border-color: white;
+    border-radius: 15px;
+    padding: 5px;
+}
+textarea{
+    width: 40%;
+    background-color: #f5f0f0;
+    color: #000;
+    border: 2px solid rgb(114, 114, 93);
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+input[type=submit]{
+    width: 15%;
+    height: 40px;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    
+}
+input[type=reset]{
+    width: 15%;
+    height: 40px;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    
+}
+
+.required:after{
+    content: " *";
+    color: yellow;
+}
+
+
+/*estilo da loja virtual*/
+
+#banner-lojavirtual{
+    width: 100%;
+    height: auto;
+}
+
+#main-lojavirtual .titulo {
+    top: 46.5%;
+}
+
+#caixa-mural-produtos{
+    width: 100%;
+    height: auto;
+
+}
+
+ .quadro-mural-produtos{
+    width: 94%;
+    height: auto;
+    display: inline-block;
+}
+
+#mural-produtos{
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    list-style: none;
+    padding-top: 2%;
+}
+
+.box-imagem-produtos{
+    width: 40%;
+    height: 215px; 
+    padding-top: 6%;
+}
+
+#main-lojavirtual p {
+    padding: 4% 0;
+}
+
+#mural-produtos h2 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#main-lojavirtual .breadcrumb {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1366px){
+    #main-lojavirtual .titulo {
+        top: 53.7%;
+    }
+    .box-imagem-produtos{
+        width: 40%;
+        height: 180px; 
+        padding-top: 6%;
+    }
+}
+
+@media screen and (max-width: 630px){
+
+    #banner-lojavirtual{
+        height: 108px;
+    }
+    #mural-produtos{
+       width: 100%;
+    }
+    #main-lojavirtual p {
+        padding: 2% 8.5%;    
+    }
+}
+
+
+
+
 
 /*
+CORES
 amarelo: rgba(232, 182, 2, 0.836);
 vermelho: rgba(99, 1, 1, 1)
+@media screen and (max-width: 1366px){}
+
+@media screen and (max-width: 630px){}
 
 */
