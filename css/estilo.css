@@ -950,6 +950,77 @@ input[type=reset]{
 
 
 
+/*Mural - EVENTOS*/
+
+#main-eventos {
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+#banner-eventos{
+    width: 30%;
+    height: auto;
+}
+
+#caixa-mural-eventos{
+  margin-top: 2%;
+  margin-left: 20%;
+  padding: 1% 2% 2% 1%;
+  width: 100%;
+}
+
+.quadro-mural-eventos{
+    width: 85%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#caixa-mural-eventos{
+    width: 90%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#mural-eventos{
+    width: 28%;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 6% 2%;
+    vertical-align: top;
+}
+
+.box-imagem-eventos {
+    width: 250px;
+    height: 250px; 
+}
+
+h1 {
+      text-align: center;
+  }
+
+#main-eventos p{
+    font-size: 1em;
+    text-align: justify;
+}
+
+#main-eventos h2 {
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#main-eventos .breadcrumb {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#main-eventos .titulo {
+    top: 52%;
+}
+
 
 
 /*
