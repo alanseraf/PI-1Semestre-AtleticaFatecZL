@@ -144,6 +144,7 @@ p {
     background-color: rgba(229, 229, 229, 0.432);
     width: 100%;
     line-height: 1.5em;
+    margin: 0;
 }
 
 #main-quemsomos .titulo {
@@ -302,9 +303,9 @@ footer p {
 
 .breadcrumb {
     list-style: none;    
-    text-align: left;
-    padding-bottom: 1%;
-    padding-left: 1%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 0;
 }
 
 .breadcrumb li {
@@ -639,9 +640,6 @@ label [for="bt_menu"]{
     text-align: center;
 }
 
-#main-campeonatos .breadcrumb {
-    text-align: center;
-}
 
 /*QUEM SOMOS*/
 #historia{
@@ -657,12 +655,6 @@ label [for="bt_menu"]{
 
 #historia h1 {
     text-align: center;
-}
-
-#main-quemsomos .breadcrumb {
-    text-align: center;
-    padding: 0;
-    margin: 0;
 }
 
 #historia-logos {
@@ -782,14 +774,28 @@ label [for="bt_menu"]{
 }
 
 /* Estilo para formulário de contato */
+
 #conteudo{
-    width: 92%;
+    width: 100%;
     min-height: 600px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9em;
     text-align: justify;
     background-color: #fff;
+    margin: 0;
 }
+
+#conteudo .titulo {
+    float: clear;
+    z-index: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
 section{
     padding: 0;
 }
@@ -919,11 +925,6 @@ input[type=reset]{
     font-size: 1.5em;
 }
 
-#main-lojavirtual .breadcrumb {
-    text-align: center;
-    text-transform: uppercase;
-}
-
 @media screen and (max-width: 1366px){
     #main-lojavirtual .titulo {
         top: 53.7%;
@@ -1013,18 +1014,14 @@ h1 {
 #main-eventos p{
     font-size: 1em;
     text-align: justify;
+    padding-top: 0.8em;
 }
 
 #main-eventos h2 {
     font-size: 1.2em;
     text-align: center;
     text-transform: uppercase;
-}
-
-#main-eventos .breadcrumb {
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 0.5em;
+    padding-top: 0.8em;
 }
 
 #main-eventos .titulo {
@@ -1032,6 +1029,19 @@ h1 {
     color: rgba(99, 1, 1, 1);
     background-color: rgba(170, 129, 129, 0.897);
 }
+
+
+/*Estilo página de acessibilidade*/
+
+#main-acessibilidade {
+    padding-bottom: 3em;
+}
+
+
+#main-acessibilidade p {
+    text-align: left;
+}
+
 
 
 
