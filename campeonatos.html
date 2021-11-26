@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="JS/contraste.js"></script>
     <script type="text/javascript" src="JS/fonte.js"></script>
+    <script type="text/javascript" src="JS/menu_movel.js"></script>
     <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
     <title>Campeonatos</title>
 </head>
@@ -31,7 +32,7 @@
         <a href="index.html"><img id="logo-topo" src="img/logo_atletica_semfundo.png" alt="Imagem do logo da Atlética da Fatec Zona Leste com um escudo nas cores vermelha e amarela e uma coruja branca"></a>
         <nav>
             <label for="bt_menu"><img id="dropdown" src="img/menu_white.ico" alt="botão de menu"></label>
-            <input type="checkbox" id="bt_menu">
+            <input type="checkbox" id="bt_menu" onclick="MudaImg()">
             <ul id="menu-topo">
                 <li><a href="quemsomos.html">QUEM SOMOS</a></li>
                 <li><a href="modalidades.html">MODALIDADES</a></li>
@@ -44,13 +45,16 @@
     </header>
     <main id="main-campeonatos">
         <img id="banner-campeonatos" src="img/campeonatos_mural.png" alt="Imagem de um troféu encima de uma bola de futebol">
+        <section>
         <h1 class="titulo">CAMPEONATOS</h1>
         <ul class="breadcrumb">
             <li><a href="index.html">Início</a></li>
             <li>Campeonatos</li>
         </ul>
+        <h1 class="galeria_trofeus">CAMPEONATOS ROLANDO</h1>
         <fieldset>
         <ul class="campeonatos">
+       
             <li><a href="#">Campeonato de volei masculino</a></li>
             <li><a href="#">Campeonato de volei Feminino</a></li>
             <li><a href="#">Campeonato de Futsal masculino</a></li>
@@ -59,8 +63,25 @@
             <li><a href="#">Campeonato de Basquete masculino</a></li>
             <li><a href="#">Campeonato de Basquete feminino</a></li>
         </ul>
-        </fieldset>
+    </fieldset>
+    <br>
+    <h1 class="galeria_trofeus"><a href="#" class="galeria_link">GALERIA DE TROFÉUS</a></h1>
+       <a href="#"><img id="img_trofeus" src="img/trofeus.png" alt="Imagem de três troféus"></a>
+       <p class="galeria_texto">Viaje no tempo através da nossa galeria de troféus, reveja nossas conquistas durante todos estes anos! Veja a história da Fatec-ZL pela ótica do esporte e entretenimento.</p>
         <br>
+         <br>
+          <br>
+           <br>
+        <h1 class="galeria_trofeus"><a href="#" class="galeria_link">ACOMPANHE AS DATAS DAS INSCRIÇÕES</a></h1>
+        <a href="#"><img id="img_trofeus" src="img/calendario.png" alt="Imagem de três troféus"></a>
+         <p class="galeria_data_texto">Acompanhe por aqui o status das inscrições - revise dados ou solicite o cancelamento e fique ligado nas datas e prazos para entrega de documentos solicitados</p>
+          <br>
+           <br>
+            <br>
+             <br>
+              <br>
+               <br>
+        </section>
     </main>
     <footer id="rodape">
         <div id="localizacao">

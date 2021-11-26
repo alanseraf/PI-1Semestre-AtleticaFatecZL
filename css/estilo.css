@@ -1,8 +1,13 @@
 *{margin:0; padding: 0}*
 
 body {
-    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
     color: black;
+}
+
+section{
+    padding: 1%;
 }
 
 
@@ -129,8 +134,24 @@ p {
 }
 
 #main-campeonatos {
+    width: 100%;
     margin: 0;
     padding: 0;
+}
+
+.campeonatos {
+    list-style: none;    
+    text-align: left;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+.campeonatos li a{
+    text-decoration: none;
+    color: rgba(99, 1, 1, 1);
+}
+.campeonatos li a:hover{
+    text-decoration: underline;
+    color: rgba(99, 1, 1, 1);
 }
 
 .titulo {
@@ -145,6 +166,40 @@ p {
     width: 100%;
     line-height: 1.5em;
     margin: 0;
+}
+
+.galeria_trofeus{
+    text-align: left;
+    font-size: 1.4em;
+    color: rgba(99, 1, 1, 1);
+
+}
+.galeria_link{
+    text-decoration: none;
+    color: rgba(99, 1, 1, 1);
+
+}
+.galeria_texto{
+    width: 30%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: -16%;
+    text-align:left;
+    border: 2px dashed rgba(99, 1, 1, 1);
+}
+.galeria_data_texto{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: -16%;
+    height: auto;
+    text-align:left;
+    border: 2px dashed rgba(99, 1, 1, 1);
+}
+#img_trofeus{
+    width: 20%;
+    height: auto;
+    margin-right:75%;
+    border: none;
 }
 
 #main-quemsomos .titulo {
@@ -182,6 +237,7 @@ p {
     text-align: left;
     padding-left: 1%;
 }
+
 
 
 
@@ -792,9 +848,6 @@ label [for="bt_menu"]{
     padding: 0;
     margin: 0;
 }
-
-
-
 
 section{
     padding: 0;
