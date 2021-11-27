@@ -920,36 +920,34 @@ label [for="bt_menu"]{
 section{
     padding: 0;
 }
+
 input{
-    width: 40%;
+    width: 60%;
     height: 25px;
-    background-color: #f5f0f0;
-    color: #000;
+    background-color: rgba(99, 1, 1, 1);
+    color: #fff;
     border: 2px solid #500101;
-    border-radius: 15px;
     padding: 5px;
     margin-left: 5px;
 
 }
 
 #assunto{
-    width: 41%;
+    width: 61.5%;
     height: 38px;
-    background-color: #f5f0f0;
-    color: #000;
+    background-color: rgba(99, 1, 1, 1);
+    color: #fff;
     border: 2px solid #500101;
-    border-radius: 15px;
     padding: 5px;
     margin-left: 5px;
 
 }
 #data{
-    width: auto;
+    width: 60%;
     height: 24px;
-    background-color: #f5f0f0;
-    color: #000;
+    background-color: rgba(99, 1, 1, 1);
+    color: #fff;
     border: 2px solid #500101;
-    border-radius: 15px;
     padding: 5px;
     margin-left: 5px;
 
@@ -959,20 +957,18 @@ label, legend{
     font-weight: bold;
     font-size: 1em;
     margin-left: 5px;
-
 }
 
 fieldset{
-    border-color: #500101;
-    border-radius: 15px;
     padding: 5px;
+    border: none;
 }
+
 textarea{
-    width: 40%;
-    background-color: #f5f0f0;
-    color: #000;
+    width: 60.5%;
+    background-color: rgba(99, 1, 1, 1);
+    color: #fff;
     border: 2px solid #500101;
-    border-radius: 15px;
     padding: 5px;
     margin-left: 5px;
 }
@@ -983,6 +979,7 @@ input[type=submit]{
     background-color: #500101;
     color: #fff;
     cursor: pointer;
+    margin: 0 10px;
     
 }
 input[type=reset]{
@@ -998,6 +995,14 @@ input[type=reset]{
     content: " *";
     color: red;
 }
+
+#contato{
+    margin: 0 0 0 25%;
+}
+
+@media screen and (max-width: 630px){}
+
+
 
 
 /*estilo da loja virtual*/
@@ -1072,7 +1077,7 @@ input[type=reset]{
 
 
 
-/*Mural - EVENTOS*/
+/*Estilo da página */
 
 #main-eventos {
     text-align: center;
@@ -1151,6 +1156,19 @@ h1 {
     background-color: rgba(170, 129, 129, 0.897);
 }
 
+@media screen and (max-width: 630px){
+    .fundo-banner {
+      height: 120px;
+      background-size: 37%;
+    }
+ 
+    #mural-eventos{
+     width: 100%;
+    }
+}
+
+
+
 
 /*Estilo página de acessibilidade*/
 
@@ -1163,6 +1181,15 @@ h1 {
     text-align: left;
 }
 
+
+@media screen and (max-width: 630px){
+    #main-acessibilidade p {
+        text-align: justify;
+    }
+    #main-acessibilidade {
+        padding: 1em;
+    }
+}
 
 
 
