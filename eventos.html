@@ -45,7 +45,17 @@
     </header>
     <main id="main-eventos">
         <div class="fundo-banner"></div>
-        <h1 class="titulo">EVENTOS</h1>  
+        <h1 class="titulo">EVENTOS</h1>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>  
         <ul class="breadcrumb">
             <li><a href="index.html">Início</a></li>
             <li>Evento</li>
