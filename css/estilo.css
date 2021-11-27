@@ -133,6 +133,22 @@ p {
     text-align: center;
 }
 
+.titulo {
+    color: rgba(99, 1, 1, 1);
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 73%;
+    background-color: rgba(229, 229, 229, 0.432);
+    width: 100%;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+/* Estilo - Campeonatos */
+
 #main-campeonatos {
     width: 100%;
     margin: 0;
@@ -152,20 +168,6 @@ p {
 .campeonatos li a:hover{
     text-decoration: underline;
     color: rgba(99, 1, 1, 1);
-}
-
-.titulo {
-    color: rgba(99, 1, 1, 1);
-    text-align: center;
-    font-size: 3em;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-    top: 73%;
-    background-color: rgba(229, 229, 229, 0.432);
-    width: 100%;
-    line-height: 1.5em;
-    margin: 0;
 }
 
 .galeria_trofeus{
@@ -202,19 +204,85 @@ p {
     border: none;
 }
 
-#main-quemsomos .titulo {
-    left: 0;
-    top: 60%;
-}
 
 #main-campeonatos .titulo {
     top: 74%;
 
 }
 
+#main-quemsomos .titulo {
+    left: 0;
+    top: 60%;
+}
+
 #main-modalidades .titulo {
     top: 695px;
 }
+
+@media screen and (max-width: 630px){
+    #main-campeonatos h1{
+        text-align: left;
+    }
+    #main-campeonatos fieldset{
+        width: 80%;
+        margin: 4% 10%;
+    }
+    .campeonatos li a{
+
+    }
+    .campeonatos li a:hover{
+
+    }
+    
+    #main-campeonatos .galeria_trofeus{
+       text-align: center;
+    }
+    .galeria_link{
+
+    
+    }
+    .galeria_texto{
+        width: 80%;
+        padding: 0 1%;
+        margin: 0 8%;
+
+    }
+    .galeria_data_texto{
+        width: 80%;
+        padding: 0 1%;
+        margin: 2% 8%;
+    
+    }
+    #img_trofeus{
+        width: 50%;
+        padding: 0 25%;
+    }
+    
+    #main-campeonatos .titulo {
+   
+    }
+
+    #main-campeonatos .galeria_texto {
+        text-align: justify;
+    }
+
+    #main-campeonatos .galeria_data_texto {
+        text-align: justify;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*media query do titulo*/
