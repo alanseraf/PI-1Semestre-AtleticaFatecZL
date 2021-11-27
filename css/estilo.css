@@ -152,7 +152,7 @@ p {
 #main-campeonatos {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding-bottom: 10%;
 }
 
 .campeonatos {
@@ -174,6 +174,8 @@ p {
     text-align: left;
     font-size: 1.4em;
     color: rgba(99, 1, 1, 1);
+    padding-left: 1%;
+    padding-top: 2%;
 
 }
 .galeria_link{
@@ -185,20 +187,20 @@ p {
     width: 30%;
     height: auto;
     margin-left: 25%;
-    margin-top: -16%;
+    margin-top: -12%;
     text-align:left;
     border: 2px dashed rgba(99, 1, 1, 1);
 }
 .galeria_data_texto{
     width: 50%;
     margin-left: 25%;
-    margin-top: -16%;
+    margin-top: -11%;
     height: auto;
     text-align:left;
     border: 2px dashed rgba(99, 1, 1, 1);
 }
 #img_trofeus{
-    width: 20%;
+    width: 180px;
     height: auto;
     margin-right:75%;
     border: none;
@@ -219,6 +221,12 @@ p {
     top: 695px;
 }
 
+#main-campeonatos p {
+    text-align: center;
+}
+
+
+
 @media screen and (max-width: 630px){
     #main-campeonatos h1{
         text-align: left;
@@ -227,20 +235,11 @@ p {
         width: 80%;
         margin: 4% 10%;
     }
-    .campeonatos li a{
-
-    }
-    .campeonatos li a:hover{
-
-    }
-    
+ 
     #main-campeonatos .galeria_trofeus{
        text-align: center;
     }
-    .galeria_link{
 
-    
-    }
     .galeria_texto{
         width: 80%;
         padding: 0 1%;
@@ -257,33 +256,15 @@ p {
         width: 50%;
         padding: 0 25%;
     }
-    
-    #main-campeonatos .titulo {
-   
-    }
-
     #main-campeonatos .galeria_texto {
         text-align: justify;
     }
-
     #main-campeonatos .galeria_data_texto {
         text-align: justify;
     }
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*media query do titulo*/
 @media screen and (max-width: 1366px) {
@@ -758,12 +739,6 @@ label [for="bt_menu"]{
 
 }   
 
-/*CAMPEONATOS*/
-
-#main-campeonatos p {
-    text-align: center;
-}
-
 
 /*QUEM SOMOS*/
 #historia{
@@ -1115,7 +1090,7 @@ input[type=reset]{
 
 
 
-/*Estilo da página */
+/*Estilo da página eventos */
 
 #main-eventos {
     text-align: center;
@@ -1132,7 +1107,7 @@ input[type=reset]{
     background-image: url(../img/eventos_baner_atletica.png);
     background-size: 32%;
     width: 100%;
-    height: 450px;
+    height: 270px;
     opacity: 0.8;
 }
 
