@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web da Atlética da FATEC Zona Leste">
+    <meta name="keywords" content="Atlética, FATEC, Zona Leste">
+    <meta name="author" content="Alan Serafim, Douglas Silva, Pablo Pontes, Thais Almeida">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="JS/maskcontato.js"></script>
+    <script type="text/javascript" src="JS/contraste.js"></script>
+    <script type="text/javascript" src="JS/fonte.js"></script>
+    <script type="text/javascript" src="JS/menu_movel.js"></script>
+    <link rel="icon" href="img/logo_icone.ico" type="image/x-icon">
+    <title>Fale Conosco</title>
+</head>
+<body>
+    <header>
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo [1]</a></li>
+                <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">Ir para o rodapé [3]</a></li>
+                <li id="pgacess"><a href="acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBILIDADE</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="diminuir">A-</a></li>
+            </ul>
+        </div>
+        <a href="index.html"><img id="logo-topo" src="img/logo_atletica_semfundo.png" alt="Imagem do logo da Atlética da Fatec Zona Leste com um escudo nas cores vermelha e amarela e uma coruja branca"></a>
+        <nav>
+            <label for="bt_menu"><img id="dropdown" src="img/menu_white.ico" alt="Imagem do botão de menu contendo três faixas brancas"></label>
+            <input type="checkbox" id="bt_menu" onclick="MudaImg()">
+            <ul id="menu-topo">
+                <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+                <li><a href="modalidades.html">MODALIDADES</a></li>
+                <li><a href="campeonatos.html">CAMPEONATOS</a></li>
+                <li><a href="eventos.html">EVENTOS</a></li>
+                <li><a href="loja_virtual.html">LOJA VIRTUAL</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="conteudo">
+        <h1 class="titulo">Filiação</h1>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Início</a></li>
+            <li>Filiação</li>
+        </ul>
+        <section>
+        <form name="contato" id="contato" method="POST">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="nome" class="required">Nome</label><br>
+                <input type="text" name="nome" id="nome" required placeholder="Nome Completo"><br>
+                <label for="data" class="required">Data de Nascimento</label><br>
+                <input type="date" name="data" id="data" required><br>
+                <label for="celular" class="celular">CPF</label><br>
+                <input type="tel" name="celular" id="celular" required placeholder="999.999.999-99"><br>
+                <label for="celular" class="celular">Telefone</label><br>
+                <input type="tel" name="celular" id="celular" required placeholder="(11) 9 9999-9999"><br>
+                <label for="email" class="required">E-mail</label><br>
+                <input type="email" name="e-mail" id="e-mail" required placeholder="seuemail@site.com.br"><br>
+                <label for="assunto" class="required">Curso</label><br>
+                <select name="assunto" id="assunto" required>
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="Desenvolvimento de Software Multiplataforma">DSM - Desenvolvimento de Software Multiplataforma</option>
+                    <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                    <option value="Comércio Exterior">Comércio Exterior</option>
+                    <option value="Desenvolvimento de Produtos Plásticos">Desenvolvimento de Produtos Plásticos</option>
+                    <option value="Gestão de Recursos Humanos">Gestão de Recursos Humanos</option>
+                    <option value="Gestão Empresarial">Gestão Empresarial</option>
+                    <option value="Gestão Empresarial - EAD">Gestão Empresarial - EAD</option>
+                    <option value="Logística">Logística</option>
+                    <option value="Polímeros">Polímeros</option>
+                </select><br>  
+                <label for="assunto" class="required">Turma</label><br>
+                <select name="assunto" id="assunto" required>
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="2018 - 1º Semestre">2018 - 1º Semestre</option>
+                    <option value="2018 - 2º Semestre">2018 - 2º Semestre</option>
+                    <option value="2019 - 1º Semestre">2019 - 1º Semestre</option>
+                    <option value="2019 - 2º Semestre">2019 - 2º Semestre</option>
+                    <option value="2020 - 1º Semestre">2020 - 1º Semestre</option>
+                    <option value="2020 - 2º Semestre">2020 - 2º Semestre</option>
+                    <option value="2021 - 1º Semestre">2021 - 1º Semestre</option>
+                    <option value="2021 - 2º Semestre">2021 - 2º Semestre</option>
+                </select><br>      
+                <label for="assunto" class="required">Horário</label><br>
+                <select name="assunto" id="assunto" required>
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="Manhã">Manhã</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noite">Noite</option>
+                    <option value="Não Presencial">Não Presencial</option>
+                </select><br>     
+            </fieldset>
+            <fieldset>
+                <legend>Comentários</legend>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea class="required" name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem" rows="10" cols="50" required></textarea>                    
+            </fieldset><br>
+            <input type="submit" name="enviar" id="enviar" value="Enviar"> <input type="reset" name="limpar" id="limpar" value="Limpar">
+        </form> 
+        <br>
+        </section>
+    </main>
+    <footer>
+        <div id="localizacao">
+            <img id="ico-localizacao" src="img/localizar.ico" alt="imagem do ícone de localização na cor branca">
+            <p>Av. Águia de Haia, 2983  Cidade A. E. Carvalho - São Paulo - SP CEP: 03694-000</p>
+        </div>
+        <div id="ico">
+            <img id="ico-facebook" src="img/facebook_img_white.ico" alt="imagem do ícone do facebook na cor branca">
+            <img id="ico-instagram" src="img/instagram_img_white.ico" alt="imagem do ícone do instagram na cor branca">
+        </div>
+        <div id="email">
+            <img id="ico-email" src="img/email_img.ico" alt="imagem do ícone de email na cor branca">
+            <p>fateczlatletica@gmail.com</p>
+        </div>
+        <p>Desenvolvido por Alan Serafim, Douglas Silva, Pablo Pontes e Thais Almeida &copy; 2021.</p>
+    </footer>
+</body>
+</html>

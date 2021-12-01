@@ -498,6 +498,118 @@ footer p {
 }
 
 
+/* Estilo modalidades 2*/
+
+#caixa-mural-modalidades-detalhes{
+    margin-top: 2%;
+    margin-left: 20%;
+    padding: 1% 2% 2% 1%;
+    width: 60%;
+}
+.quadro-mural-modalidaes-detalhes{
+    width: 85%;
+    display: inline-block;
+    padding: 2%;
+} 
+#mural-modalidades-detalhes{
+    width: 100%;
+    display: inline-block;
+    margin-left: 3%;
+    margin-bottom: 4%;
+    box-shadow: 13px 13px 0px -4px rgba(99, 1, 1, 1);
+
+}
+.box-imagem-modalidades-detalhes{
+    width: 200;
+    height: 220px; 
+    padding-top: 6%;
+    text-align: right;
+}
+
+#mural-modalidades-detalhes li{
+    width: 100%;
+    list-style: none;
+    display: block;
+    font-weight: bold;
+    padding-bottom: 4%;
+    background-color: #E5E5E5;
+    text-align: left;
+    padding-left: 6%;
+}
+
+#caixa-mural-modalidades-detalhes p {
+    text-align: left;
+    padding-bottom: 1%;
+    padding: 0;
+    margin: 0;
+}
+
+#caixa-mural-modalidades-detalhes h1 {
+    text-align: left;
+    padding-bottom: 4%;
+}
+
+#caixa-mural-modalidades-detalhes h2 {
+    padding: 0 0 1em 0;
+    margin: 0;
+}
+
+#caixa-mural-modalidades-detalhes input[type=submit]{
+    width: 15%;
+    height: 40px;
+    background-color: #500101;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px;
+    
+}
+#caixa-mural-modalidades-detalhes input[type=reset]{
+    width: 15%;
+    height: 40px;
+    background-color: #500101;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+#caixa-mural-modalidades-detalhes input[type=fechar]{
+    width: 6%;
+    height: 20px;
+    background-color: #500101;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 0 0 1%;
+}
+
+
+/*Estilo subpage index */
+
+#botoes-index2 {
+    position: absolute;
+    z-index: 5;
+    top: 40px;
+    left: 1000px;;
+}
+
+#botoes-index2 input[type=submit]{
+    width: 100px;
+    height: 40px;
+    background-color: whitesmoke;
+    color: #000;
+    cursor: pointer;
+    
+}
+
+#botoes-index2 input[type=reset]{
+    width: 100px;
+    height: 40px;
+    background-color: whitesmoke;
+    color: #000;
+    cursor: pointer;
+}
+
+
+
 /* Media query da breadcrumb*/
 @media screen and (max-width: 630px){
     .breadcrumb{
@@ -1172,9 +1284,17 @@ h1 {
 }
 
 #main-eventos .titulo {
-    top: 58.2%;
+    top: 39.5%;
     color: rgba(99, 1, 1, 1);
     background-color: rgba(170, 129, 129, 0.897);
+}
+
+@media screen and (max-width: 1366px){
+    #main-eventos .titulo {
+        top: 58.2%;
+        color: rgba(99, 1, 1, 1);
+        background-color: rgba(170, 129, 129, 0.897);
+    }
 }
 
 @media screen and (max-width: 630px){
