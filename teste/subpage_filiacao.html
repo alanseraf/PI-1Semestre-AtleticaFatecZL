@@ -46,7 +46,7 @@
         </nav>
     </header>
     <main id="conteudo">
-        <h1 class="titulo">FALE CONOSCO</h1>
+        <h1 class="titulo">Filiação</h1>
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
@@ -59,7 +59,7 @@
         </script>
         <ul class="breadcrumb">
             <li><a href="index.html">Início</a></li>
-            <li>Fale Conosco</li>
+            <li>Filiação</li>
         </ul>
         <section>
         <form name="contato" id="contato" method="POST">
@@ -69,22 +69,50 @@
                 <input type="text" name="nome" id="nome" required placeholder="Nome Completo"><br>
                 <label for="data" class="required">Data de Nascimento</label><br>
                 <input type="date" name="data" id="data" required><br>
-                <label for="celular" class="celular">Celular</label><br>
+                <label for="celular" class="celular">CPF</label><br>
+                <input type="tel" name="celular" id="celular" required placeholder="999.999.999-99"><br>
+                <label for="celular" class="celular">Telefone</label><br>
                 <input type="tel" name="celular" id="celular" required placeholder="(11) 9 9999-9999"><br>
                 <label for="email" class="required">E-mail</label><br>
                 <input type="email" name="e-mail" id="e-mail" required placeholder="seuemail@site.com.br"><br>
-            </fieldset>
-            <fieldset>
-                <legend>Mensagem</legend>
-                <label for="assunto" class="required">Assunto</label><br>
+                <label for="assunto" class="required">Curso</label><br>
                 <select name="assunto" id="assunto" required>
                     <option value="" selected disabled>Selecione</option>
-                    <option value="Dúvida">Dúvida</option>
-                    <option value="Elogio">Elogio</option>
-                    <option value="Reclamação">Reclamação</option>
-                    </select><br>
-                    <label for="mensagem">Mensagem</label><br>
-                    <textarea class="required" name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem" rows="10" cols="50" required></textarea>                    
+                    <option value="Desenvolvimento de Software Multiplataforma">DSM - Desenvolvimento de Software Multiplataforma</option>
+                    <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                    <option value="Comércio Exterior">Comércio Exterior</option>
+                    <option value="Desenvolvimento de Produtos Plásticos">Desenvolvimento de Produtos Plásticos</option>
+                    <option value="Gestão de Recursos Humanos">Gestão de Recursos Humanos</option>
+                    <option value="Gestão Empresarial">Gestão Empresarial</option>
+                    <option value="Gestão Empresarial - EAD">Gestão Empresarial - EAD</option>
+                    <option value="Logística">Logística</option>
+                    <option value="Polímeros">Polímeros</option>
+                </select><br>  
+                <label for="assunto" class="required">Turma</label><br>
+                <select name="assunto" id="assunto" required>
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="2018 - 1º Semestre">2018 - 1º Semestre</option>
+                    <option value="2018 - 2º Semestre">2018 - 2º Semestre</option>
+                    <option value="2019 - 1º Semestre">2019 - 1º Semestre</option>
+                    <option value="2019 - 2º Semestre">2019 - 2º Semestre</option>
+                    <option value="2020 - 1º Semestre">2020 - 1º Semestre</option>
+                    <option value="2020 - 2º Semestre">2020 - 2º Semestre</option>
+                    <option value="2021 - 1º Semestre">2021 - 1º Semestre</option>
+                    <option value="2021 - 2º Semestre">2021 - 2º Semestre</option>
+                </select><br>      
+                <label for="assunto" class="required">Horário</label><br>
+                <select name="assunto" id="assunto" required>
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="Manhã">Manhã</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noite">Noite</option>
+                    <option value="Não Presencial">Não Presencial</option>
+                </select><br>     
+            </fieldset>
+            <fieldset>
+                <legend>Comentários</legend>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea class="required" name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem" rows="10" cols="50" required></textarea>                    
             </fieldset><br>
             <input type="submit" name="enviar" id="enviar" value="Enviar"> <input type="reset" name="limpar" id="limpar" value="Limpar">
         </form> 

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web da Atlética da FATEC Zona Leste">
+    <meta name="keywords" content="Atlética, FATEC, Zona Leste">
+    <meta name="author" content="Alan Serafim, Douglas Silva, Pablo Pontes, Thais Almeida">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="JS/contraste.js"></script>
+    <script type="text/javascript" src="JS/fonte.js"></script>
+    <script type="text/javascript" src="JS/menu_movel.js"></script>
+    <link rel="icon" href="img/logo_icone.ico" type="image/x-icon">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo [1]</a></li>
+                <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">Ir para o rodapé [3]</a></li>
+                <li id="pgacess"><a href="acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBILIDADE</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="diminuir">A-</a></li>
+            </ul>
+        </div>
+        <a href="index.html"><img id="logo-topo" src="img/logo_atletica_semfundo.png" alt="Imagem do logo da Atlética da Fatec Zona Leste com um escudo nas cores vermelha e amarela e uma coruja branca"></a>
+        <nav>
+            <label for="bt_menu"><img id="dropdown" src="img/menu_white.ico" alt="Imagem do botão de menu contendo três faixas brancas"></label>
+            <input type="checkbox" id="bt_menu" onclick="MudaImg()">
+            <ul id="menu-topo">
+                <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+                <li><a href="modalidades.html">MODALIDADES</a></li>
+                <li><a href="campeonatos.html">CAMPEONATOS</a></li>
+                <li><a href="eventos.html">EVENTOS</a></li>
+                <li><a href="loja_virtual.html">LOJA VIRTUAL</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img id="banner" src="img/banner_quemsomos3.jpg" alt="Imagem contendo uma equipe esportiva juntando as mãos representando união">
+        <h1>ATLÉTICA FATEC ZONA LESTE</h1>
+        <div vw class="enabled">
+              <div vw-access-button class="active"></div>
+              <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+              </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+              new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+        <section id="caixa-mural">
+            <h2>Fique por dentro do que acontece na Atlética Fatec ZL</h2>
+            <div class="quadro-mural">
+                <ul id="mural">
+                    <li><img class="box-imagem" src="img/modalidades_mural.PNG  " alt="Imagem contendo a equipe de futsal feminino da Fatec"></li>
+                    <li><p class="texto-box">Conheça e participe das modalidades esportivas da nossa Atlética</p></li>
+                </ul>
+                <ul id="mural">
+                    <li><img class="box-imagem" src="img/eventos_multiram_atletica.jpg" alt="Imagem contendo a frase mutirão fatec zl juntamente com a data de vinte e um de novembro"></li>
+                    <li><p class="texto-box">Participe do Multirão de Limpeza 2022.</p></li>
+                </ul>
+                <ul id="mural">
+                    <li><img class="box-imagem" src="img/college_vermelha.webp" alt="Imagem de um moletom college com mangas longas, abertura na frente com botões e de cor vermelha"></li>
+                    <li><p class="texto-box">Conheça os novos produtos da lojinha da Atlética.</p></li>
+                </ul>
+                <ul id="mural">
+                    <li><img class="box-imagem" src="img/logo_fatec_colorido.png" alt="Espaço não preenchido reservado para divulgação de atividades"></li>
+                    <li><p class="texto-box">Descrição da imagem</p></li>
+                </ul>
+                <ul id="mural">
+                    <li><img class="box-imagem" src="img/logo_fatec_colorido.png" alt="Espaço não preenchido reservado para divulgação de atividades"></li>
+                    <li><p class="texto-box">Descrição da imagem</p></li>
+                </ul>
+                <ul id="mural">
+                    <li><img class="box-imagem" src="img/logo_fatec_colorido.png" alt="Espaço não preenchido reservado para divulgação de atividades"></li>
+                    <li><p class="texto-box">Descrição da imagem</p></li>
+                </ul>
+                <ul id="mural">
+                    <li><img class="box-imagem" src="img/logo_fatec_colorido.png" alt="Espaço não preenchido reservado para divulgação de atividades"></li>
+                    <li><p class="texto-box">Descrição da imagem</p></li>
+                </ul>
+                <ul id="mural">
+                    <li><img class="box-imagem" src="img/logo_fatec_colorido.png" alt="Espaço não preenchido reservado para divulgação de atividades"></li>
+                    <li><p class="texto-box">Descrição da imagem</p></li>
+                </ul>
+            </div>
+        </section>
+        <img id="banner" src="img/banner_filiação.png" alt="Descrever">
+        <section id="botoes-index2">
+            <input type="submit" name="enviar" id="enviar" value="LOGIN"> 
+            <input type="reset" name="limpar" id="limpar" value="FILIE-SE">
+        </section>
+        <section id="mapa">
+            <h3>LOCALIZAÇÃO</h3>
+            <p>A FATEC ZL está localizado no coração da Zona Leste de São Paulo.</p>
+            <div class="mapa-iframe">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3097954317063!2d-46.47770326835123!3d-23.521357523908254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61270808f47f%3A0xddc2deca4778eb69!2sFATEC%20Zona%20Leste%20%2F%20Vila%20Uni%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1637589573056!5m2!1spt-BR!2sbr" width="80%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="localizacao">
+            <img id="ico-localizacao" src="img/localizar.ico" alt="imagem do ícone de localização na cor branca">
+            <p>Av. Águia de Haia, 2983  Cidade A. E. Carvalho - São Paulo - SP CEP: 03694-000</p>
+        </div>
+        <div id="ico">
+            <img id="ico-facebook" src="img/facebook_img_white.ico" alt="imagem do ícone do facebook na cor branca">
+            <img id="ico-instagram" src="img/instagram_img_white.ico" alt="imagem do ícone do instagram na cor branca">
+        </div>
+        <div id="email">
+            <img id="ico-email" src="img/email_img.ico" alt="imagem do ícone de email na cor branca">
+            <p>fateczlatletica@gmail.com</p>
+        </div>
+        <p>Desenvolvido por Alan Serafim, Douglas Silva, Pablo Pontes e Thais Almeida &copy; 2021.</p>
+    </footer>
+</body>
+</html>

@@ -13,13 +13,13 @@
     <script type="text/javascript" src="JS/fonte.js"></script>
     <script type="text/javascript" src="JS/menu_movel.js"></script>
     <link rel="icon" href="img/logo_icone.ico" type="image/x-icon">
-    <title>Loja Virtual</title>
+    <title>Modalidades</title>
 </head>
 <body>
     <header>
         <div id="acessibilidade">
             <ul id="atalhos">
-                <li><a href="#main-lojavirtual" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo [1]</a></li>
+                <li><a href="#main-modalidades" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo [1]</a></li>
                 <li><a href="#menu-topo" accesskey="2" title="Ir diretamente para o menu">Ir para o menu [2]</a></li>
                 <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">Ir para o rodapé [3]</a></li>
                 <li id="pgacess"><a href="acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBILIDADE</a></li>
@@ -43,9 +43,9 @@
             </ul>
         </nav>
     </header>
-    <main id="main-lojavirtual">         
-        <img id="banner-lojavirtual" src="img/Design sem nome.jpg" alt="Imagem em amarelo mostarda há uma imagem do lado esquerdo em preto de um homem empurrando um carrinho de compras e do lado direito uma figura em preto de uma coruja">
-        <h1 class="titulo">LOJA VIRTUAL</h1>
+    <main id="main-modalidades">
+        <img id="banner-modalidades" src="img/basquete_partida.jpg" alt="Imagem em preto e branco de uma partida de jogo de basquetebol com um jogador arremessando a bola">
+        <h1 class="titulo">MODALIDADES</h1>
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
@@ -58,49 +58,36 @@
         </script>
         <ul class="breadcrumb">
             <li><a href="index.html">Início</a></li>
-            <li>Loja Virtual</li>
+            <li>Modalidades</li>
         </ul>
-        <section id="caixa-mural-produtos">
-            <div class="quadro-mural-produtos">
-                <ul id="mural-produtos">
-                    <li><img class="box-imagem-produtos" src="img/blusa_preta.webp" alt="Imagem de um moletom com mangas longas, com touca e de cor preta"></li>
-                    <li><h2>Moletom Atlética - Preto</h2></li>
-                    <li>(Unissex, Tamanhos Diversos)</li>
-                    <li>Valor: R$100,00 em até 2x s/ juros</li>
-                </ul>
-                <ul id="mural-produtos">
-                    <li><img class="box-imagem-produtos" src="img/blusa_vermelha.webp" alt="Imagem de um moletom com mangas longas, com touca e de cor vermelha"></li>
-                     <li><h2>Moletom Atlética - Vermelho</h2></li>
-                    <li>(Unissex, Tamanhos Diversos)</li>
-                    <li>Valor: R$100,00 em até 2x s/ juros</li>
-                </ul>
-                <ul id="mural-produtos">
-                    <li><img class="box-imagem-produtos" src="img/blusa_branca.webp" alt="Imagem de um moletom com mangas longas, com touca e de cor branca"></li>
-                    <li><h2>Moletom Atlética - Branco</h2></li>
-                    <li>(Unissex, Tamanhos Diversos)</li>
-                    <li>Valor: R$100,00 em até 2x s/ juros</li>
-                </ul>
-                <ul id="mural-produtos">
-                    <li><img class="box-imagem-produtos" src="img/collegepreta.webp" alt="Imagem de um moletom college com mangas longas, abertura na frente com botões e de cor preta"></li>
-                    <li><h2>College Atlética - Preto</h2></li>
-                    <li>(Unissex, Tamanhos Diversos)</li>
-                    <li>Valor: R$150,00 em até 3x s/ juros</li>
-                </ul>
-                <ul id="mural-produtos">
-                    <li><img class="box-imagem-produtos" src="img/collegepreta.webp" alt="Imagem de um moletom college com mangas longas, abertura na frente com botões e de cor vermelha"></li>
-                     <li><h2>College Atlética - Vermelho</h2></li>
-                    <li>(Unissex, Tamanhos Diversos)</li>
-                    <li>Valor: R$150,00 em até 3x s/ juros</li>
-                </ul>
-                <ul id="mural-produtos">
-                    <li><img class="box-imagem-produtos" src="img/college_azul.webp" alt="Imagem de um moletom college com mangas longas, abertura na frente com botões e de cor azul"></li>
-                    <li><h2>Atlética - Azul<h2></li>
-                    <li>(Unissex, Tamanhos Diversos)</li>
-                    <li>Valor: R$150,00 em até 3x s/ juros</li>
-                </ul>     
+        <section id="caixa-mural-modalidades-detalhes">
+            <div class="quadro-mural-modalidaes-detalhes">
+                <ul id="mural-modalidades-detalhes">
+                    <li><img class="box-imagem-modalidades-detalhes" src="img/futsal.png" alt="Imagem com um desenho representando um jogador de futsal na cor preta"></li>
+                    <li><h1>FUTSAL FEMINO</h1>
+                        <section>
+                            <form name="contato" id="contato" method="POST">
+                                <fieldset>
+                                    <legend><h1>INSCREVA-SE</h1></legend>
+                                    <label for="nome" class="required">ID de Membro</label><br>
+                                    <input type="text" name="nome" id="nome" required placeholder="2021-999"><br>
+                                    <label for="senha" class="celular">Senha</label><br>
+                                    <input type="tel" name="celular" id="celular"><br>
+                                    <label for="celular" class="celular">Celular</label><br>
+                                    <input type="tel" name="celular" id="celular" required placeholder="(11) 9 9999-9999"><br>
+                                    <label for="email" class="required">E-mail</label><br>
+                                    <input type="email" name="e-mail" id="e-mail" required placeholder="seuemail@site.com.br"><br>
+                                </fieldset>
+                                <br>
+                                <input type="submit" name="enviar" id="enviar" value="Enviar"> <input type="reset" name="limpar" id="limpar" value="Limpar">
+                            </form> 
+                            <br>
+                            </section> 
+                    </li>
+                </ul>                
             </div>
         </section>
-        <p>Os Produtos podem ser encomendados contatando a página da Atlética no Facebook, Instagram e nos grupos da Fatec ZL no WhatsApp. Fique ligado!</p>
+        <p>Os horários e locais dos treinos são disponibilizados na página da Atlética no Facebook e nos grupos da Fatec ZL no WhatsApp. Fique ligado!</p>
     </main>
     <footer id="rodape">
         <div id="localizacao">
